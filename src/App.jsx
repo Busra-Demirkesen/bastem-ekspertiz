@@ -1,14 +1,27 @@
-import { useState } from 'react'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Services from "./pages/Services";
+import Contact from "./pages/Contact";
 
-import './App.css'
 
+console.log("App loaded");
 function App() {
   return (
-    <div className="text-center p-10">
-      <h1 className="text-4xl text-blue-600 font-bold">Tailwind Çalışıyor 🎉</h1>
-    </div>
+    <BrowserRouter>
+
+      <Navbar />
+      <main className="p-4">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/hakkimizda" element={<About />} />
+          <Route path="/hizmetler" element={<Services />} />
+          <Route path="/iletisim" element={<Contact />} />
+        </Routes>
+      </main>
+    </BrowserRouter>
   );
 }
 
-
-export default App
+export default App;
