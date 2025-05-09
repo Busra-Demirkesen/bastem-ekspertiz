@@ -17,11 +17,12 @@ function BannerSlider() {
       loop={true}
       autoplay={{ delay: 4000 }}
       pagination={{ clickable: true }}
-      className="w-full h-[500px]"
+      className="w-full h-auto"
     >
       {images.map((src, index) => (
 <SwiperSlide key={index}>
-  <div className="relative w-full h-[400px] md:h-[500px] xl:h-[600px]">
+  <div className="relative w-full h-[500px] md:h-[650px] xl:h-[800px]">
+
     {/* Arka plan görseli */}
     <img
       src={src}
