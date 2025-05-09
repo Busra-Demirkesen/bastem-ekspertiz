@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { Phone, Mail } from "lucide-react";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -8,11 +9,17 @@ function Navbar() {
     <>
       {/* TOPBAR */}
       <div className="bg-gray-800 text-gray-200 text-sm">
-        <div className="max-w-6xl mx-auto px-10 py-6 flex justify-between items-center">
-          <p>📞 0 555 123 45 67</p>
-          <p>✉️ info@bastemekspertiz.com</p>
-        </div>
-      </div>
+  <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+    <p className="flex items-center gap-2">
+      <Phone className="w-4 h-4" />
+      0 555 123 45 67
+    </p>
+    <p className="flex items-center gap-2">
+      <Mail className="w-4 h-4" />
+      info@bastemekspertiz.com
+    </p>
+  </div>
+</div>
 
       {/* NAVBAR */}
       {/* NAVBAR */}
@@ -41,7 +48,7 @@ function Navbar() {
       {/* Sağdaki Buton */}
       <Link
         to="/iletisim"
-        className="bg-black text-white px-4 py-2 rounded shadow  hover:-translate-y-1 transition-all duration-300 ease-in-out"
+        className="bg-gray-800 text-white px-4 py-2 rounded shadow  hover:-translate-y-1 transition-all duration-300 ease-in-out"
       >
        Ulaşın
       </Link>

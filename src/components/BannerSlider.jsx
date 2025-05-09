@@ -39,7 +39,7 @@ function BannerSlider() {
       <h1 className="text-3xl md:text-5xl font-bold mb-4">Güven Önceliğimizdir</h1>
   <a
   href="#iletisim"
-  className="inline-block bg-black text-white px-6 py-2 rounded shadow  hover:-translate-y-1 transition-all duration-300 ease-in-out"
+  className="inline-block bg-gray-800 text-white px-6 py-2 rounded shadow  hover:-translate-y-1 transition-all duration-300 ease-in-out"
 >
   İletişim
 </a>
