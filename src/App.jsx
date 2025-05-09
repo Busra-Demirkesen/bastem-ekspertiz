@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Services from "./pages/Services";
 import Contact from "./pages/Contact";
+import BannerSlider from "./components/BannerSlider";
 
 
 console.log("App loaded");
@@ -12,6 +13,7 @@ function App() {
     <BrowserRouter>
 
       <Navbar />
+      <BannerSlider/>
       <main className="p-4">
         <Routes>
           <Route path="/" element={<Home />} />
@@ -21,6 +23,7 @@ function App() {
         </Routes>
       </main>
     </BrowserRouter>
+    
   );
 }
 
