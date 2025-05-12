@@ -1,9 +1,12 @@
+import HomeServicesCards from "../components/HomeServicesCards";
+import HomePartnersSection from "../components/HomePartnersSection";
+
 function Home() {
   return (
     <div className="text-center p-10">
-
-       
-      <h1 className="text-2xl font-bold text-blue-600">Anasayfa</h1>
+      
+      <HomeServicesCards />
+       <HomePartnersSection />
     </div>
   );
 }

@@ -32,16 +32,19 @@ function Navbar() {
     <div className="hidden md:flex items-center space-x-6">
       <ul className="flex space-x-6 text-black">
         <li>
-          <Link to="/" className="hover:text-gray-300">Anasayfa</Link>
+          <Link to="/" className="hover:text-blue-600">Anasayfa</Link>
         </li>
         <li>
-          <Link to="/hakkimizda" className="hover:text-gray-300">Hakkımızda</Link>
+          <Link to="/hakkimizda" className="hover:text-blue-600">Hakkımızda</Link>
         </li>
         <li>
-          <Link to="/hizmetler" className="hover:text-gray-300">Hizmetler</Link>
+          <Link to="/hizmetler" className="hover:text-blue-600">Hizmetler</Link>
+        </li>
+          <li>
+          <Link to="/referanslar" className="hover:text-blue-600">Referanslarımız</Link>
         </li>
         <li>
-          <Link to="/iletisim" className="hover:text-gray-300">İletişim</Link>
+          <Link to="/iletisim" className="hover:text-blue-600">İletişim</Link>
         </li>
       </ul>
 
