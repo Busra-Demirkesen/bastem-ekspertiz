@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -6,26 +6,70 @@ import Services from "./pages/Services";
 import Reference from "./pages/Reference";
 import Contact from "./pages/Contact";
 import BannerSlider from "./components/BannerSlider";
-
+import DefaultLayout from "./layouts/DefaultLayout";
 
 console.log("App loaded");
+
+function AppContent() {
+  const location = useLocation();
+  const isHome = location.pathname === "/";
+
+  return (
+    <>
+      <Navbar />
+
+      {/* Sadece anasayfada BannerSlider göster */}
+      {isHome && <BannerSlider />}
+
+      <main className="p-4">
+        <Routes>
+          {/* Anasayfa özel layout'suz */}
+          <Route path="/" element={<Home />} />
+
+          {/* Diğer sayfalara DefaultLayout uygula */}
+          <Route
+            path="/hakkimizda"
+            element={
+              <DefaultLayout>
+                <About />
+              </DefaultLayout>
+            }
+          />
+          <Route
+            path="/hizmetler"
+            element={
+              <DefaultLayout>
+                <Services />
+              </DefaultLayout>
+            }
+          />
+          <Route
+            path="/referanslar"
+            element={
+              <DefaultLayout>
+                <Reference />
+              </DefaultLayout>
+            }
+          />
+          <Route
+            path="/iletisim"
+            element={
+              <DefaultLayout>
+                <Contact />
+              </DefaultLayout>
+            }
+          />
+        </Routes>
+      </main>
+    </>
+  );
+}
+
 function App() {
   return (
     <BrowserRouter>
-
-      <Navbar />
-      <BannerSlider/>
-      <main className="p-4">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/hakkimizda" element={<About />} />
-          <Route path="/hizmetler" element={<Services />} />
-           <Route path="/referanslar" element={<Reference />} />
-          <Route path="/iletisim" element={<Contact />} />
-        </Routes>
-      </main>
+      <AppContent />
     </BrowserRouter>
-    
   );
 }
 

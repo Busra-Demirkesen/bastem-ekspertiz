@@ -10,20 +10,14 @@ const Footer = () => {
           </p>
         </div>
 
-        {/* 2. Sütun */}
-        <div>
-          <h3 className="text-lg font-semibold mb-2">Merkez Ofis</h3>
-          <p className="text-sm">Evliya Çelebi Mh. Meşrutiyet Cd. No:68/A Kat:1/1 Beyoğlu/İstanbul</p>
-          <p className="text-sm mt-2">📞 0212 292 92 73</p>
-          <p className="text-sm">✉️ bilgi@arpaekspertiz.com</p>
-        </div>
+      
 
         {/* 3. Sütun */}
         <div>
           <h3 className="text-lg font-semibold mb-2">Erzurum Şube</h3>
-          <p className="text-sm">Muratpaşa Mah. İsmet Paşa Cad. Emeç Apt. Kat:4 No:4 Yakutiye / Erzurum</p>
-          <p className="text-sm mt-2">📞 0442 234 60 60</p>
-          <p className="text-sm">✉️ bilgi@arpaekspertiz.com</p>
+          <p className="text-sm"> Lalapaşa Mah.Mumcu Cad.Deniz Aprt.Kat :5 No:31 Yakutiye/ERZURUM </p>
+          <p className="text-sm mt-2">📞 (0442) 234 89 37</p>
+          <p className="text-sm">✉️  msbastem@hotmail.com</p>
         </div>
       </div>
 
