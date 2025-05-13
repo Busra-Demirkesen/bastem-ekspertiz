@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Phone, Mail } from "lucide-react";
+import logo from "../assets/images/bastem-logo.png";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,29 +13,30 @@ function Navbar() {
         <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
           <p className="flex items-center gap-2">
             <Phone className="w-4 h-4" />
-            0 555 123 45 67
+            (0442) 234 89 37
           </p>
           <p className="flex items-center gap-2">
             <Mail className="w-4 h-4" />
-            info@bastemekspertiz.com
+            msbastem@hotmail.com
           </p>
         </div>
       </div>
 
       {/* NAVBAR */}
       <header className="bg-white shadow sticky top-0 z-50">
-        <nav className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+        <nav className="w-full px-4 md:px-6 py-4 flex justify-between items-center">
+
           {/* Logo */}
-          <h1 className="text-xl font-bold text-black">BASTEM Ekspertiz</h1>
+          <img src={logo} alt="Bastem Logo" className="h-24 w-auto" />
 
           {/* Masaüstü Menü */}
           <div className="hidden md:flex items-center space-x-6">
             <ul className="flex space-x-6 text-gray-800">
               <li><Link to="/" className="hover:text-blue-600">Anasayfa</Link></li>
-              <li><Link to="/hakkimizda" className="hover:text-blue-600">Hakkımızda</Link></li>
-              <li><Link to="/hizmetler" className="hover:text-blue-600">Hizmetler</Link></li>
-              <li><Link to="/referanslar" className="hover:text-blue-600">Referanslarımız</Link></li>
-              <li><Link to="/iletisim" className="hover:text-blue-600">İletişim</Link></li>
+              <li><Link to="/hakkimizda" className="hover:text-blue-900">Hakkımızda</Link></li>
+              <li><Link to="/hizmetler" className="hover:text-blue-900">Hizmetler</Link></li>
+              <li><Link to="/referanslar" className="hover:text-blue-900">Referanslarımız</Link></li>
+              <li><Link to="/iletisim" className="hover:text-blue-900">İletişim</Link></li>
             </ul>
             <Link
               to="/iletisim"

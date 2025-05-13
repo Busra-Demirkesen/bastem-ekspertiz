@@ -75,7 +75,7 @@ const Contact = () => {
         ></textarea>
         <button
           type="submit"
-          className="bg-black text-white px-6 py-3 rounded-xl hover:opacity-90 transition"
+          className="bg-gray-800 text-white px-6 py-3 rounded-md  hover:-translate-y-1 transition-all duration-300 ease-in-out"
         >
           Gönder
         </button>

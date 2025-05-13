@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
+import { Link } from "react-router-dom";
 
 import banner1 from "../assets/images/banner-car.jpg";
 import banner2 from "../assets/images/banner-house.jpg";
@@ -37,12 +38,12 @@ function BannerSlider() {
     <div className="text-center text-white z-20 px-4 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
       <h3 className="text-lg md:text-2xl tracking-widest mb-2">BASTEM Ekspertiz</h3>
       <h1 className="text-3xl md:text-5xl font-bold mb-4">Güven Önceliğimizdir</h1>
-  <a
-  href="#iletisim"
-  className="inline-block bg-gray-800 text-white px-6 py-2 rounded shadow  hover:-translate-y-1 transition-all duration-300 ease-in-out"
+ <Link
+  to="/iletisim"
+  className="inline-block bg-gray-800 text-white px-6 py-2 rounded shadow hover:-translate-y-1 transition-all duration-300 ease-in-out"
 >
   İletişim
-</a>
+</Link>
 
     </div>
   </div>
