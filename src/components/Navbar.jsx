@@ -27,24 +27,28 @@ function Navbar() {
         <nav className="w-full px-4 md:px-6 py-4 flex justify-between items-center">
 
           {/* Logo */}
-          <img src={logo} alt="Bastem Logo" className="h-24 w-auto" />
+          <img src={logo} alt="Bastem Logo" className="h-16 w-auto" />
 
-          {/* Masaüstü Menü */}
-          <div className="hidden md:flex items-center space-x-6">
-            <ul className="flex space-x-6 text-gray-800">
-              <li><Link to="/" className="hover:text-blue-600">Anasayfa</Link></li>
-              <li><Link to="/hakkimizda" className="hover:text-blue-900">Hakkımızda</Link></li>
-              <li><Link to="/hizmetler" className="hover:text-blue-900">Hizmetler</Link></li>
-              <li><Link to="/referanslar" className="hover:text-blue-900">Referanslarımız</Link></li>
-              <li><Link to="/iletisim" className="hover:text-blue-900">İletişim</Link></li>
-            </ul>
-            <Link
-              to="/iletisim"
-              className="bg-gray-800 text-white px-4 py-2 rounded shadow hover:-translate-y-1 transition-all duration-300 ease-in-out"
-            >
-              Ulaşın
-            </Link>
-          </div>
+        
+        {/* Masaüstü Menü */}
+<div className="hidden md:flex items-center flex-1 justify-center relative">
+  <ul className="flex space-x-6 text-gray-800">
+    <li><Link to="/" className="hover:text-blue-600">Anasayfa</Link></li>
+    <li><Link to="/hakkimizda" className="hover:text-blue-900">Hakkımızda</Link></li>
+    <li><Link to="/hizmetler" className="hover:text-blue-900">Hizmetler</Link></li>
+    <li><Link to="/referanslar" className="hover:text-blue-900">Referanslarımız</Link></li>
+    <li><Link to="/iletisim" className="hover:text-blue-900">İletişim</Link></li>
+  </ul>
+
+  {/* Ulaşın butonu – en sağ üst köşeye sabit */}
+  <Link
+    to="/iletisim"
+    className="absolute right-0 bg-gray-800 text-white px-4 py-2 rounded shadow hover:-translate-y-1 transition-all duration-300 ease-in-out"
+  >
+    Ulaşın
+  </Link>
+</div>
+
 
           {/* Hamburger icon - sadece md altı */}
           <div className="md:hidden z-50">
