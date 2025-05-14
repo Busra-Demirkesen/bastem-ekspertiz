@@ -24,7 +24,7 @@ const logos = [
 const Reference = () => {
   return (
     <div className="max-w-7xl mx-auto px-4 py-12">
-      <h2 className="text-3xl font-bold text-center mb-10">Referanslarımız</h2>
+      <h2 className="text-3xl text-gray-800 font-bold text-center mb-10">Referanslarımız</h2>
 
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 place-items-center">
         {logos.map((logo, index) => (
