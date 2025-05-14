@@ -9,7 +9,7 @@ import {
 const Contact = () => {
   return (
     <div className="px-4 py-10 max-w-7xl mx-auto">
-      <h2 className="text-3xl font-bold mb-10 text-center">İletişim</h2>
+      <h2 className="text-3xl font-bold mb-10 text-center text-gray-800">İletişim</h2>
 
       {/* Harita ve İletişim Bilgileri */}
       <div className="flex flex-col lg:flex-row gap-10 mb-12">
@@ -27,7 +27,7 @@ const Contact = () => {
         </div>
 
         {/* Adres Bilgileri */}
-        <div className="flex-1 text-lg space-y-6">
+        <div className="flex-1 text-lg space-y-6 text-gray-800">
           <div className="flex items-start gap-3">
             <MapPin className="text-black mt-1" />
             <p>
