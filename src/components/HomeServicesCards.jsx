@@ -1,8 +1,6 @@
 import { FaCar, FaBriefcase, FaFireExtinguisher } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 
-
-
 const services = [
   {
     id: 1,
@@ -22,6 +20,8 @@ const services = [
 ];
 
 const HomeServicesCards = () => {
+  const navigate = useNavigate();
+
   return (
     <section className="bg-gray-100 py-12">
       <div className="max-w-6xl mx-auto px-4">
@@ -35,7 +35,8 @@ const HomeServicesCards = () => {
           {services.map((service) => (
             <div
               key={service.id}
-              className="bg-white rounded-2xl shadow-md hover:shadow-xl transition p-6 text-center cursor-pointer"
+              onClick={() => navigate("/hizmetler")}
+              className="bg-white rounded-2xl shadow-md hover:shadow-xl transition p-6 text-center cursor-pointer hover:-translate-y-1 transform duration-300"
             >
               {service.icon}
               <h3 className="text-lg font-semibold">{service.title}</h3>

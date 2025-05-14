@@ -27,12 +27,14 @@ function Navbar() {
         <nav className="w-full px-4 md:px-6 py-4 flex justify-between items-center">
 
           {/* Logo */}
-          <img src={logo} alt="Bastem Logo" className="h-16 w-auto" />
+    <img src={logo} alt="Bastem Logo" className="h-12 md:h-16 w-auto" />
+
 
         
         {/* Masaüstü Menü */}
 <div className="hidden md:flex items-center flex-1 justify-center relative">
-  <ul className="flex space-x-6 text-gray-800">
+ <ul className="flex space-x-3 md:space-x-4 lg:space-x-6 text-gray-800 font-bold">
+
     <li><Link to="/" className="hover:text-blue-600">Anasayfa</Link></li>
     <li><Link to="/hakkimizda" className="hover:text-blue-900">Hakkımızda</Link></li>
     <li><Link to="/hizmetler" className="hover:text-blue-900">Hizmetler</Link></li>
@@ -41,12 +43,14 @@ function Navbar() {
   </ul>
 
   {/* Ulaşın butonu – en sağ üst köşeye sabit */}
-  <Link
-    to="/iletisim"
-    className="absolute right-0 bg-gray-800 text-white px-4 py-2 rounded shadow hover:-translate-y-1 transition-all duration-300 ease-in-out"
-  >
-    Ulaşın
-  </Link>
+<Link
+  to="/iletisim"
+  className="absolute right-0 bg-gray-800 text-white text-sm md:text-base px-3 py-1.5 md:px-4 md:py-2 rounded shadow hover:-translate-y-1 transition-all duration-300 ease-in-out"
+>
+  Ulaşın
+</Link>
+
+
 </div>
 
 
@@ -97,7 +101,7 @@ function Navbar() {
           </div>
 
           {/* Menü Öğeleri */}
-          <ul className="mt-16 space-y-6 text-lg">
+          <ul className="mt-16 space-y-6 text-lg font-bold">
             <li><Link to="/" onClick={() => setIsOpen(false)} className="block hover:text-gray-300">Anasayfa</Link></li>
             <li><Link to="/hakkimizda" onClick={() => setIsOpen(false)} className="block hover:text-gray-300">Hakkımızda</Link></li>
             <li><Link to="/hizmetler" onClick={() => setIsOpen(false)} className="block hover:text-gray-300">Hizmetler</Link></li>

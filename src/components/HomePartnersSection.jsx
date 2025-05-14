@@ -4,7 +4,7 @@ const HomePartnersSection = () => {
   const navigate = useNavigate();
 
   const handleClick = () => {
-    navigate("/referanslarimiz");
+    navigate("/referanslar");
   };
 
   return (
@@ -18,7 +18,7 @@ const HomePartnersSection = () => {
         {/* Sağ taraf: Buton */}
         <button
           onClick={handleClick}
-          className="bg-gray-800  text-white font-semibold py-3 px-6 rounded-lg transition transform hover:-translate-y-1 duration-300"
+          className="bg-gray-800 text-white font-semibold py-3 px-6 rounded-lg transition transform hover:-translate-y-1 duration-300"
         >
           Referanslarımız
         </button>
