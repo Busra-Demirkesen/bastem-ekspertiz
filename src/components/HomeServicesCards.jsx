@@ -25,12 +25,10 @@ const HomeServicesCards = () => {
   return (
     <section className="bg-gray-100 py-12">
       <div className="max-w-6xl mx-auto px-4">
-        
         <h2 className="text-3xl font-bold text-center text-gray-800 mb-10">
           Size Özel Hizmetlerimiz
         </h2>
 
-      
         <div className="grid md:grid-cols-3 gap-8">
           {services.map((service) => (
             <div
