@@ -35,7 +35,7 @@ function Navbar() {
 <div className="hidden md:flex items-center flex-1 justify-center relative">
  <ul className="flex space-x-3 md:space-x-4 lg:space-x-6 text-gray-800 font-bold">
 
-    <li><Link to="/" className="hover:text-blue-600">Anasayfa</Link></li>
+    <li><Link to="/" className="hover:text-blue-900">Anasayfa</Link></li>
     <li><Link to="/hakkimizda" className="hover:text-blue-900">Hakkımızda</Link></li>
     <li><Link to="/hizmetler" className="hover:text-blue-900">Hizmetler</Link></li>
     <li><Link to="/referanslar" className="hover:text-blue-900">Referanslarımız</Link></li>
