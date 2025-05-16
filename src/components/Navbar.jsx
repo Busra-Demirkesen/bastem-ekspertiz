@@ -8,7 +8,7 @@ function Navbar() {
 
   return (
     <>
-      {/* TOPBAR – sadece md ve üzeri görünür */}
+     
       <div className="hidden md:block bg-gray-800 text-gray-200 text-sm">
         <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
           <p className="flex items-center gap-2">
@@ -22,16 +22,16 @@ function Navbar() {
         </div>
       </div>
 
-      {/* NAVBAR */}
+     
       <header className="bg-white shadow sticky top-0 z-50">
         <nav className="w-full px-4 md:px-6 py-4 flex justify-between items-center">
 
-          {/* Logo */}
+          
     <img src={logo} alt="Bastem Logo" className="h-12 md:h-16 w-auto" />
 
 
         
-        {/* Masaüstü Menü */}
+       
 <div className="hidden md:flex items-center flex-1 justify-center relative">
  <ul className="flex space-x-3 md:space-x-4 lg:space-x-6 text-gray-800 font-bold">
 
@@ -42,7 +42,7 @@ function Navbar() {
     <li><Link to="/iletisim" className="hover:text-blue-900">İletişim</Link></li>
   </ul>
 
-  {/* Ulaşın butonu – en sağ üst köşeye sabit */}
+
 <Link
   to="/iletisim"
   className="absolute right-0 bg-gray-800 text-white text-sm md:text-base px-3 py-1.5 md:px-4 md:py-2 rounded shadow hover:-translate-y-1 transition-all duration-300 ease-in-out"
@@ -54,7 +54,7 @@ function Navbar() {
 </div>
 
 
-          {/* Hamburger icon - sadece md altı */}
+        
           <div className="md:hidden z-50">
             <button
               onClick={() => setIsOpen(true)}
@@ -69,14 +69,14 @@ function Navbar() {
         </nav>
       </header>
 
-      {/* Mobil Menü (Tam ekran soldan kayan) */}
+    
       <div
         className={`fixed top-0 left-0 h-full w-full bg-gray-900 text-white z-40 transform transition-transform duration-300 ease-in-out ${
           isOpen ? "translate-x-0" : "-translate-x-full"
         } md:hidden`}
       >
         <div className="relative p-6 h-full flex flex-col">
-          {/* Çıkış (X) ikonu – sağ üst köşeye sabit */}
+        
           <div className="absolute top-4 right-4 z-50">
             <button
               onClick={() => setIsOpen(false)}
@@ -100,7 +100,7 @@ function Navbar() {
             </button>
           </div>
 
-          {/* Menü Öğeleri */}
+         
           <ul className="mt-16 space-y-6 text-lg font-bold">
             <li><Link to="/" onClick={() => setIsOpen(false)} className="block hover:text-gray-300">Anasayfa</Link></li>
             <li><Link to="/hakkimizda" onClick={() => setIsOpen(false)} className="block hover:text-gray-300">Hakkımızda</Link></li>
@@ -111,7 +111,7 @@ function Navbar() {
         </div>
       </div>
 
-      {/* Menü açıkken arka plan karartma */}
+  
       {isOpen && (
         <div
           className="fixed inset-0 bg-black bg-opacity-50 z-30 md:hidden"

@@ -8,7 +8,7 @@ function Services() {
   return (
     <section className="bg-white py-16 px-4">
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-        {/* SOL – Görsel */}
+  
         <div>
           <img
             src={ekspertizImg}
@@ -17,7 +17,7 @@ function Services() {
           />
         </div>
 
-        {/* SAĞ – Metin */}
+  
         <div>
           <h1 className="text-3xl font-bold text-gray-800 mb-6">Hizmetlerimiz</h1>
           <ul className="space-y-4 text-gray-700 text-lg list-disc list-inside">
@@ -30,7 +30,7 @@ function Services() {
         </div>
       </div>
 
-      {/* ALT KARTLAR */}
+  
       <div className="mt-16">
         <div className="max-w-6xl mx-auto px-4">
           <div className="grid md:grid-cols-3 gap-8">

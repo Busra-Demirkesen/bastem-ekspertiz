@@ -1,6 +1,6 @@
 import React from "react";
 
-// 8 logoyu import et
+
 import anadoluSigorta from "../assets/images/sigorta/anadoluSigorta.jpg";
 import axaSigorta from "../assets/images/sigorta/axaSigorta.jpg";
 import bereketSigorta from "../assets/images/sigorta/bereketsigorta.jpg";

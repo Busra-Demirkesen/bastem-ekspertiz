@@ -11,9 +11,9 @@ const Contact = () => {
     <div className="px-4 py-10 max-w-7xl mx-auto">
       <h2 className="text-3xl font-bold mb-10 text-center text-gray-800">İletişim</h2>
 
-      {/* Harita ve İletişim Bilgileri */}
+
       <div className="flex flex-col lg:flex-row gap-10 mb-12">
-        {/* Harita */}
+      
         <div className="flex-1">
           <iframe
             title="Google Map"
@@ -26,7 +26,7 @@ const Contact = () => {
           ></iframe>
         </div>
 
-        {/* Adres Bilgileri */}
+       
         <div className="flex-1 text-lg space-y-6 text-gray-800">
           <div className="flex items-start gap-3">
             <MapPin className="text-black mt-1" />
@@ -51,7 +51,7 @@ const Contact = () => {
         </div>
       </div>
 
-      {/* İletişim Formu */}
+    
       <form className="max-w-3xl mx-auto space-y-4">
         <input
           type="text"

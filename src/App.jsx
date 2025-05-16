@@ -18,15 +18,15 @@ function AppContent() {
     <>
       <Navbar />
 
-      {/* Sadece anasayfada BannerSlider göster */}
+    
       {isHome && <BannerSlider />}
 
       <main className="p-4">
         <Routes>
-          {/* Anasayfa özel layout'suz */}
+         
           <Route path="/" element={<Home />} />
 
-          {/* Diğer sayfalara DefaultLayout uygula */}
+       
           <Route
             path="/hakkimizda"
             element={
