@@ -1,18 +1,16 @@
 import React from 'react';
 import { CheckCircle } from 'lucide-react';
 
-const AboutPage = () => {
+
+
+const About = () => {
   return (
     <section className="w-full bg-white py-16 px-6 md:px-12">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
 
-        {/* Sol taraf: görsel + hizmet özeti */}
+       
         <div className="flex flex-col items-center md:items-start">
-          <img
-            src="/images/expertiz-icon.png"
-            alt="Bastem Ekspertiz Logo"
-            className="w-32 h-32 mb-6"
-          />
+        
 
           <h3 className="text-lg font-semibold mb-4">Hizmetlerimiz</h3>
           <ul className="space-y-2 text-sm text-gray-700">
@@ -31,7 +29,7 @@ const AboutPage = () => {
           </ul>
         </div>
 
-        {/* Sağ taraf: Hakkımızda metni */}
+      
         <div>
           <h2 className="text-2xl font-bold mb-4">Hakkımızda</h2>
           <p className="text-sm text-gray-700 leading-relaxed">
@@ -44,7 +42,7 @@ const AboutPage = () => {
         </div>
       </div>
 
-      {/* Alt kısım: Vizyon ve Misyon */}
+     
       <div className="max-w-4xl mx-auto mt-16 grid grid-cols-1 md:grid-cols-2 gap-10">
         <div>
           <h3 className="text-xl font-semibold mb-2">Vizyonumuz</h3>
@@ -65,4 +63,4 @@ const AboutPage = () => {
   );
 };
 
-export default AboutPage;
+export default About;
