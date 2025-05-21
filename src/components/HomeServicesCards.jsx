@@ -34,7 +34,7 @@ const HomeServicesCards = () => {
             <div
               key={service.id}
               onClick={() => navigate("/hizmetler")}
-              className="bg-white rounded-2xl shadow-md hover:shadow-xl transition p-6 text-center cursor-pointer hover:-translate-y-1 transform duration-300"
+              className="bg-white rounded-2xl shadow-md hover:shadow-xl transition p-6 cursor-pointer hover:-translate-y-1 transform duration-300 flex flex-col items-center text-center"
             >
               {service.icon}
               <h3 className="text-lg font-semibold">{service.title}</h3>
