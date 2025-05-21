@@ -12,18 +12,24 @@ function Navbar() {
         <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
           <p className="flex items-center gap-2">
             <Phone className="w-4 h-4" />
-            (0442) 234 89 37
+            <a href="tel:+904422348937" className="hover:underline">
+              (0442) 234 89 37
+            </a>
           </p>
           <p className="flex items-center gap-2">
             <Mail className="w-4 h-4" />
-            msbastem@hotmail.com
+            <a href="mailto:msbastem@hotmail.com" className="hover:underline">
+              msbastem@hotmail.com
+            </a>
           </p>
         </div>
       </div>
 
       <header className="bg-white shadow sticky top-0 z-50">
         <nav className="w-full px-4 md:px-6 py-4 flex justify-between items-center">
-          <img src={logo} alt="Bastem Logo" className="h-12 md:h-16 w-auto" />
+           <Link to="/">
+    <img src={logo} alt="Bastem Logo" className="h-12 md:h-16 w-auto cursor-pointer" />
+  </Link>
 
           <div className="hidden md:flex items-center flex-1 justify-center relative">
             <ul className="flex space-x-3 md:space-x-4 lg:space-x-6 text-gray-800 font-bold">

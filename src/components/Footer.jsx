@@ -21,10 +21,16 @@ const Footer = () => {
           </p>
 
           <div className="flex items-center gap-2 mt-3 text-sm">
-            <Phone size={16} /> (0442) 234 89 37
+            <Phone size={16} />
+            <a href="tel:+904422348937" className="hover:underline">
+              (0442) 234 89 37
+            </a>
           </div>
           <div className="flex items-center gap-2 text-sm mt-1">
-            <Mail size={16} /> msbastem@hotmail.com
+            <Mail size={16} />
+            <a href="mailto:msbastem@hotmail.com" className="hover:underline">
+              msbastem@hotmail.com
+            </a>
           </div>
         </div>
       </div>
